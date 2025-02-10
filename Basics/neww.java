@@ -7,5 +7,6 @@ public class neww {
         int b = s.nextInt();
         
         System.out.println(a+b);
+        s.close();
     }
 }
