@@ -13,10 +13,6 @@ public class taxcal {
         }else{
             tax = n*.30f;
             System.out.println("Total tax = "+tax);
-        }
-        
-        
-        
         
         sc.close();
     }
