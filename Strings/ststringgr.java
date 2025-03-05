@@ -8,6 +8,8 @@ public class ststringgr {
     strr = sc.nextLine();
     System.out.println(strr);
     sc.close();
-    }
+    System.out.println(strr.length());
+
+}
     
 }
