@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class min_in_array {
     public static void min(int arr[]){
         int min = Integer.MAX_VALUE;
