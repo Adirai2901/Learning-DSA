@@ -16,7 +16,7 @@ public class substring {
         }
 
         System.out.println(str.charAt(5));
-
+        System.out.println(substr);
         
         sc.close();
     }
