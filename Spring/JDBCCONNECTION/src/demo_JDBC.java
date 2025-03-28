@@ -22,12 +22,16 @@ public class demo_JDBC {
 //            System.out.print(rs.getString(2)+"-");
 //            System.out.println(rs.getInt(3));
 //        }
-        boolean x = st.execute("insert into student values (6,'cow',99)");
+        boolean x = st.execute("UPDATE student \n" +
+                "SET \"SID\" = CASE \n" +
+                "    when \"SID\" = 7 then 5 \n" +
+                "END\n" +
+                "WHERE \"SID\" IN (7);\n ");
 //        System.out.println(x);
 
-        
 
-        ResultSet rs = st.executeQuery("Select * from student");
+
+        ResultSet rs = st.executeQuery("Select * from student order by \"SID\";");
         while(rs.next()){
             System.out.print(rs.getInt(1)+"-");
             System.out.print(rs.getString(2)+"-");
