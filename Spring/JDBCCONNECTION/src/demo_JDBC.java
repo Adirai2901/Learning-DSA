@@ -39,7 +39,6 @@ public class demo_JDBC {
         }
 
 
-
         con.close();
 
 
